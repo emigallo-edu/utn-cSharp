@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using Business.Operations;
+
+namespace Business.Models
+{
+    public class ValueInput
+    {
+        public ValueInput(double value)
+        {
+            this.Value = value;
+            this.Operations = new List<OperationBase>();
+        }
+
+        public double Value { get; init; }
+
+        public List<OperationBase> Operations { get; init; }
+    }
+}
