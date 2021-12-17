@@ -14,21 +14,4 @@ namespace Business.Models
             return result;
         }
     }
-
-    public class Auto
-    {
-        private int _cambioActual;
-
-        public string Color { get; set; }
-
-        public Auto()
-        {
-
-        }
-
-        public void Encender()
-        {
-
-        }
-    }
 }

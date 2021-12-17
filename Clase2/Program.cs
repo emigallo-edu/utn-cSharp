@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using Clase2.Models;
 using Clase2.Services;
 
 namespace Clase2
@@ -8,8 +10,10 @@ namespace Clase2
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            TableService service = new TableService();
-            service.GetDistincsTableColor();
+            ChairService service = new ChairService();
+            //List<Chair> result = service.GetChairsInStockByColor("blue");
+
+            var result = service.GetChairsAmountByColor();
         }
     }
 }

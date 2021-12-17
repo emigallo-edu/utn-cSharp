@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Clase2.Models;
-using static Clase2.Models.Material;
+using Clase3.Models;
+using static Clase3.Models.Material;
 
-namespace Clase2.Services
+namespace Clase3.Services
 {
     public class TableService
     {
