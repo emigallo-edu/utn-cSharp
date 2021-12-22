@@ -1,0 +1,5 @@
+/Users/emilianogallo/Stuffs/git/UTN/cSharp/Clase4/Business/obj/Debug/net5.0/Business.csproj.AssemblyReference.cache
+/Users/emilianogallo/Stuffs/git/UTN/cSharp/Clase4/Business/obj/Debug/net5.0/Business.GeneratedMSBuildEditorConfig.editorconfig
+/Users/emilianogallo/Stuffs/git/UTN/cSharp/Clase4/Business/obj/Debug/net5.0/Business.AssemblyInfoInputs.cache
+/Users/emilianogallo/Stuffs/git/UTN/cSharp/Clase4/Business/obj/Debug/net5.0/Business.AssemblyInfo.cs
+/Users/emilianogallo/Stuffs/git/UTN/cSharp/Clase4/Business/obj/Debug/net5.0/Business.csproj.CoreCompileInputs.cache

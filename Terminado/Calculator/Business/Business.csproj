@@ -9,11 +9,17 @@
     <None Remove="Operations\" />
     <None Remove="Models\" />
     <None Remove="Utils\" />
+    <None Remove="Interfaces\" />
+    <None Remove="Newtonsoft.Json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
     <Folder Include="Operations\" />
     <Folder Include="Models\" />
     <Folder Include="Utils\" />
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 </Project>

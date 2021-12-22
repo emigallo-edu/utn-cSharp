@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using Business.Interfaces;
 using Business.Operations;
 
 namespace Business.Models
 {
-    public class ValueInput
+    public class ValueInput : ICopy
     {
         public ValueInput(double value)
         {

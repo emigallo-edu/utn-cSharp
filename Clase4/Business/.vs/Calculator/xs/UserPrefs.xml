@@ -1,0 +1,40 @@
+﻿<Properties StartupConfiguration="{47AD7F05-397D-4509-AD3B-74D4715B0C91}|Default">
+  <MonoDevelop.Ide.ItemProperties.Console PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/Calculator.cs">
+    <Files>
+      <File FileName="Console/Program.cs" Line="14" Column="30" />
+      <File FileName="Operations/AddOperation.cs" />
+      <File FileName="Class1.cs" />
+      <File FileName="Models/Calculator.cs" Line="68" Column="2" />
+      <File FileName="Operations/DivideOperation.cs" />
+      <File FileName="Operations/MultiplyOperation.cs" />
+      <File FileName="Operations/SubtractOperation.cs" />
+      <File FileName="Operations/OperationBase.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Calculator" expanded="True">
+            <Node name="Business" expanded="True">
+              <Node name="Models" expanded="True">
+                <Node name="Calculator.cs" selected="True" />
+              </Node>
+              <Node name="Operations" expanded="True" />
+            </Node>
+            <Node name="Console" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="ProjectDependencies" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
