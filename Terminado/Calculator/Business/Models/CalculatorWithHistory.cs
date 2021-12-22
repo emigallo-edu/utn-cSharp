@@ -1,23 +1,19 @@
 ﻿using System.Linq;
 using Business.Operations;
+using System;
 
 namespace Business.Models
 {
     public class CalculatorWithHistory
     {
-        public CalculatorWithHistory()
-        {
-
-        }
-
         public ValueInput Input { get; private set; }
 
-        public void AddInput(double value)
+        public void Add(double value)
         {
             this.Input = new ValueInput(value);
         }
 
-        public void AddInput(OperationBase operation)
+        public void Add(OperationBase operation)
         {
             this.Input.Operations.Add(operation);
         }
@@ -56,6 +52,11 @@ namespace Business.Models
             }
 
             return rett;
+        }
+
+        public Boolean ContainsOperation(OperationBase operation)
+        {
+            return this.Input.Operations.Contains(operation);
         }
     }
 }

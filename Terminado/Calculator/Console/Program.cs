@@ -9,15 +9,18 @@ namespace Console
         {
             CalculatorWithHistory calc = new CalculatorWithHistory();
 
-            calc.AddInput(7);
-            calc.AddInput(new AddOperation(4));
-            System.Console.WriteLine("4 + 7 = " + calc.Do());
+            calc.Add(7);
+            calc.Add(new AddOperation(4));
+            // System.Console.WriteLine("4 + 7 = " + calc.Do());
 
-            calc.AddInput(new SubtractOperation(2));
-            System.Console.WriteLine("11 - 2 = " + calc.Do());
+            calc.Add(new SubtractOperation(2));
+            // System.Console.WriteLine("11 - 2 = " + calc.Do());
 
-            System.Console.WriteLine("Inputs: " + calc.GetInputs());
-            System.Console.WriteLine("Inputs: " + calc.GetOnlyAddOperationInputs());
+            // System.Console.WriteLine("Inputs: " + calc.GetInputs());
+            // System.Console.WriteLine("Inputs: " + calc.GetOnlyAddOperationInputs());
+
+
+            System.Console.WriteLine("Contains " + calc.ContainsOperation(new SubtractOperation(2)));
         }
     }
 }
