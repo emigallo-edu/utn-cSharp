@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.810.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{83251EA7-ABE5-4D4D-994A-0726189DD330}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "Business\Business.csproj", "{83251EA7-ABE5-4D4D-994A-0726189DD330}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console", "Console\Console.csproj", "{E9CAD20D-D1ED-4778-A68E-0EA92646C07F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Console", "Console\Console.csproj", "{E9CAD20D-D1ED-4778-A68E-0EA92646C07F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "GUI\GUI.csproj", "{53C5D0F7-B0BB-41B1-B55A-1FB52BF60494}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{E9CAD20D-D1ED-4778-A68E-0EA92646C07F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9CAD20D-D1ED-4778-A68E-0EA92646C07F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9CAD20D-D1ED-4778-A68E-0EA92646C07F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53C5D0F7-B0BB-41B1-B55A-1FB52BF60494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53C5D0F7-B0BB-41B1-B55A-1FB52BF60494}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53C5D0F7-B0BB-41B1-B55A-1FB52BF60494}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53C5D0F7-B0BB-41B1-B55A-1FB52BF60494}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
