@@ -1,0 +1,11 @@
+/Users/emilianogallo/Stuffs/git/UTN/cSharp/Terminado/Calculator/obj/Debug/net5.0/Calculator.csproj.AssemblyReference.cache
+/Users/emilianogallo/Stuffs/git/UTN/cSharp/Terminado/Calculator/obj/Debug/net5.0/Calculator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/emilianogallo/Stuffs/git/UTN/cSharp/Terminado/Calculator/obj/Debug/net5.0/Calculator.AssemblyInfoInputs.cache
+/Users/emilianogallo/Stuffs/git/UTN/cSharp/Terminado/Calculator/obj/Debug/net5.0/Calculator.AssemblyInfo.cs
+/Users/emilianogallo/Stuffs/git/UTN/cSharp/Terminado/Calculator/obj/Debug/net5.0/Calculator.csproj.CoreCompileInputs.cache
+/Users/emilianogallo/Stuffs/git/UTN/cSharp/Terminado/Calculator/bin/Debug/net5.0/Business.dll
+/Users/emilianogallo/Stuffs/git/UTN/cSharp/Terminado/Calculator/bin/Debug/net5.0/Business.pdb
+/Users/emilianogallo/Stuffs/git/UTN/cSharp/Terminado/Calculator/obj/Debug/net5.0/Calculator.csproj.CopyComplete
+/Users/emilianogallo/Stuffs/git/UTN/cSharp/Terminado/Calculator/obj/Debug/net5.0/Calculator.dll
+/Users/emilianogallo/Stuffs/git/UTN/cSharp/Terminado/Calculator/obj/Debug/net5.0/ref/Calculator.dll
+/Users/emilianogallo/Stuffs/git/UTN/cSharp/Terminado/Calculator/obj/Debug/net5.0/Calculator.pdb

@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{E9CAD20D-D1ED-4778-A68E-0EA92646C07F}|Default">
+  <MonoDevelop.Ide.ItemProperties.Console PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Business/Models/CalculatorWithHistory.cs">
+    <Files>
+      <File FileName="Business/Models/CalculatorWithHistory.cs" Line="68" Column="10" />
+      <File FileName="Console/Program.cs" Line="30" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Calculator" expanded="True">
+            <Node name="Business" expanded="True">
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="CalculatorWithHistory.cs" selected="True" />
+              </Node>
+              <Node name="Operations" expanded="True" />
+              <Node name="Utils" expanded="True" />
+            </Node>
+            <Node name="Console" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
