@@ -1,0 +1,98 @@
+﻿<Window x:Class="GUI.Calculator"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI"
+        mc:Ignorable="d"
+        Title="Calculator" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <!--Fila 1-->
+        <StackPanel Grid.Row="0" Grid.Column="0" Background="DarkGray" Grid.ColumnSpan="4">
+            <Label>Display</Label>
+        </StackPanel>
+
+        <!--Fila 2-->
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            <Label>AC</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <Label>+/-</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="2">
+            <Label>%</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="3">
+            <Label>÷</Label>
+        </StackPanel>
+
+        <!--Fila 3-->
+        <StackPanel Grid.Row="2" Grid.Column="0">
+            <Label>7</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1">
+            <Label>8</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="2">
+            <Label>9</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="3">
+            <Label>X</Label>
+        </StackPanel>
+
+        <!--Fila 3-->
+        <StackPanel Grid.Row="3" Grid.Column="0">
+            <Label>4</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="1">
+            <Label>5</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="2">
+            <Label>6</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="3">
+            <Label>-</Label>
+        </StackPanel>
+
+        <!--Fila 3-->
+        <StackPanel Grid.Row="4" Grid.Column="0">
+            <Label>1</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.Column="1">
+            <Label>2</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.Column="2">
+            <Label>3</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.Column="3">
+            <Label>+</Label>
+        </StackPanel>
+
+        <!--Fila 3-->
+        <StackPanel Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Background="Red">
+            <Label>0</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="5" Grid.Column="2">
+            <Label>,</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="5" Grid.Column="3">
+            <Label>=</Label>
+        </StackPanel>
+        
+    </Grid>
+</Window>

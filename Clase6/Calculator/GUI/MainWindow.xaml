@@ -3,10 +3,46 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Calculadora" 
+        Height="800" 
+        Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <!--Fila 0-->
+        <StackPanel Grid.Row="0" Grid.Column="0" Background="Red" HorizontalAlignment="Right" VerticalAlignment="Top">
+            <Button Width="100" Height="100">Clickeame!</Button> 
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="1" Background="Blue">
+            <Button Width="100" Height="100">Clickeame!</Button>
+        </StackPanel>
+        <Button Grid.Row="0" Grid.Column="3">Click nuevo</Button>
+
+        <!--Fila 1-->
+        <StackPanel Grid.Row="1" Grid.Column="0" Background="Orange">
+            <TextBox Height="100"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1" Background="White">
+            <StackPanel Background="Red" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                <TextBox Height="100"></TextBox>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="2" Background="Aqua"></StackPanel>
+
+        <!--Fila 2-->
+        <StackPanel Grid.Row="2" Grid.Column="0" Background="Green"></StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1" Background="Black"></StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="2" Background="GreenYellow"></StackPanel>
     </Grid>
 </Window>
