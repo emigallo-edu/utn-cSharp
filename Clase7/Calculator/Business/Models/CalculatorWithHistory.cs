@@ -42,7 +42,10 @@ namespace Business.Models
 
         public void AddValueToLastOperation(double value)
         {
-            this.Input.GetOperations().Last().Value = value;
+            if (this.Input.GetOperations().Any())
+            {
+                this.Input.GetOperations().Last().Value = value;
+            }
         }
 
         /// <summary>
@@ -75,10 +78,3 @@ namespace Business.Models
         }
     }
 }
-
-// 4
-// + 3
-// / 2
-// * 3
-// - 3
-// + 2

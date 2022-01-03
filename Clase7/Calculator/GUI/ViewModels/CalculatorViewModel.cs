@@ -2,30 +2,38 @@
 using Business.Operations;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace GUI.ViewModels
 {
-    class CalculatorViewModel
+    class CalculatorViewModel : INotifyPropertyChanged
     {
         private Boolean _firstValue;
         private CalculatorWithHistory _calculator;
 
-        public CalculatorViewModel()
+        #region INotifyPropertyChanged
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public void OnPropertyChanged([CallerMemberName] string propertyName = "")
         {
-            this._calculator = new CalculatorWithHistory();
-            this._firstValue = true;
+            this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        //calc.Add(4);
-        //OperationBase add = new AddOperation(3.3);
-        //calc.Add(add);
+        #endregion INotifyPropertyChanged
 
-        public double CalculateResult()
+        public CalculatorViewModel()
         {
-            return this._calculator.Do();
+            this.ClearResult();
+        }
+
+        public void CalculateResult()
+        {
+            this.Result = this._calculator.Do();
         }
 
         public void AddValue(double value)
@@ -44,7 +52,34 @@ namespace GUI.ViewModels
 
         public void AddOperation(OperationBase op)
         {
+            if (this._firstValue)
+            {
+                this._firstValue = false;
+                this._calculator.Add(0);
+            }
+
             this._calculator.Add(op);
+        }
+
+        private double _result;
+        public double Result
+        {
+            get
+            {
+                return this._result;
+            }
+            set
+            {
+                this._result = value;
+                OnPropertyChanged(nameof(Result));
+            }
+        }
+
+        internal void ClearResult()
+        {
+            this.Result = 0;
+            this._calculator = new CalculatorWithHistory();
+            this._firstValue = true;
         }
     }
 }

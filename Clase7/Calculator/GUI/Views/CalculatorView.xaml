@@ -3,18 +3,19 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
-        Title="Calculator" Height="450" Width="800">
+        Title="Calculadora"
+        Height="400"
+        Width="270"
+        KeyDown="Window_KeyDown">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="8*"/>
-            <RowDefinition Height="8*"/>
-            <RowDefinition Height="8*"/>
-            <RowDefinition Height="8*"/>
-            <RowDefinition Height="8*"/>
-            <RowDefinition Height="3*"/>
-            <RowDefinition Height="5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -23,77 +24,38 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.Row="0" Grid.Column="0" Grid.RowSpan="1" Grid.ColumnSpan="4" Background="#222">
-            <Label Foreground="#555" FontSize="20" HorizontalAlignment="Right">Value Input</Label>
-            <Label FontSize="40" Foreground="White" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,5,0,0">0</Label>
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Background="#222">
+            <Label Content="{Binding Result, Mode=OneWay}" FontSize="40" Foreground="White" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,5,0,0"></Label>
         </StackPanel>
 
         <!--Fila 1 -->
-        <Border Grid.Column="0" BorderThickness="0.1" BorderBrush="#999" Margin="0,72,0,72" Grid.RowSpan="3">
-            <Button Content="AC" Style="{StaticResource OperationButtonGray}"></Button>
-        </Border>
-        <Border Grid.Column="1" BorderThickness="0.1" BorderBrush="#999" Margin="0,72,0,72" Grid.RowSpan="3">
-            <Button Content="+/-" Style="{StaticResource OperationButtonGray}"></Button>
-        </Border>
-        <Border Grid.Column="2" BorderThickness="0.1" BorderBrush="#999" Margin="0,72,0,72" Grid.RowSpan="3">
-            <Button Content="%" Style="{StaticResource OperationButtonGray}"></Button>
-        </Border>
-        <Border Grid.Column="3" BorderThickness="0.1" BorderBrush="#EEE" Margin="0,72,0,72" Grid.RowSpan="3">
-            <Button Content="/" Style="{StaticResource OperationButtonOrange}" Click="OperationButton_Click"></Button>
-        </Border>
-        
+        <Button Grid.Row="1" Content="AC" Style="{StaticResource OperationButtonGray}" Click="ClearButton_Click"></Button>
+        <Button Grid.Row="1" Grid.Column="2" Content="%" Style="{StaticResource OperationButtonGray}"></Button>
+        <Button Grid.Row="1" Grid.Column="3" Content="/" Style="{StaticResource OperationButtonOrange}" Click="OperationButton_Click"></Button>
+        <Button Grid.Row="1" Grid.Column="1" Content="+/-" Style="{StaticResource OperationButtonGray}"></Button>
+
         <!--Fila 2 -->
-        <Border Grid.Row="2" Grid.Column="0" BorderThickness="0.1" BorderBrush="#999">
-            <Button Content="7" Style="{StaticResource NumberButton}" Click="NumberButton_Click"></Button>
-        </Border>
-        <Border Grid.Row="2" Grid.Column="1" BorderThickness="0.1" BorderBrush="#999">
-            <Button Content="8" Style="{StaticResource NumberButton}" Click="NumberButton_Click"></Button>
-        </Border>
-        <Border Grid.Row="2" Grid.Column="2" BorderThickness="0.1" BorderBrush="#999">
-            <Button Content="9" Style="{StaticResource NumberButton}" Click="NumberButton_Click"></Button>
-        </Border>
-        <Border Grid.Row="2" Grid.Column="3" BorderThickness="0.1" BorderBrush="#EEE">
-            <Button Content="X" Style="{StaticResource OperationButtonOrange}" Click="OperationButton_Click"></Button>
-        </Border>
-        
+        <Button Grid.Row="2" Grid.Column="0" Content="7" Style="{StaticResource NumberButton}" Click="NumberButton_Click"></Button>
+        <Button Grid.Row="2" Grid.Column="1" Content="8" Style="{StaticResource NumberButton}" Click="NumberButton_Click"></Button>
+        <Button Grid.Row="2" Grid.Column="2" Content="9" Style="{StaticResource NumberButton}" Click="NumberButton_Click"></Button>
+        <Button Grid.Row="2" Grid.Column="3" Content="X" Style="{StaticResource OperationButtonOrange}" Click="OperationButton_Click"></Button>
+
         <!--Fila 3 -->
-        <Border Grid.Row="2" Grid.Column="0" BorderThickness="0.1" BorderBrush="#999" Margin="0,72,0,0" Grid.RowSpan="2">
-            <Button Content="4" Style="{StaticResource NumberButton}" Click="NumberButton_Click"></Button>
-        </Border>
-        <Border Grid.Row="2" Grid.Column="1" BorderThickness="0.1" BorderBrush="#999" Margin="0,72,0,0" Grid.RowSpan="2">
-            <Button Content="5" Style="{StaticResource NumberButton}" Click="NumberButton_Click"></Button>
-        </Border>
-        <Border Grid.Row="2" Grid.Column="2" BorderThickness="0.1" BorderBrush="#999" Margin="0,72,0,0" Grid.RowSpan="2">
-            <Button Content="6" Style="{StaticResource NumberButton}" Click="NumberButton_Click"></Button>
-        </Border>
-        <Border Grid.Row="2" Grid.Column="3" BorderThickness="0.1" BorderBrush="#EEE" Margin="0,72,0,0" Grid.RowSpan="2">
-            <Button Content="-" Style="{StaticResource OperationButtonOrange}" Click="OperationButton_Click"></Button>
-        </Border>
-        
+        <Button Grid.Row="3" Grid.Column="0" Content="4" Style="{StaticResource NumberButton}" Click="NumberButton_Click"></Button>
+        <Button Grid.Row="3" Grid.Column="1" Content="5" Style="{StaticResource NumberButton}" Click="NumberButton_Click"></Button>
+        <Button Grid.Row="3" Grid.Column="2" Content="6" Style="{StaticResource NumberButton}" Click="NumberButton_Click"></Button>
+        <Button Grid.Row="3" Grid.Column="3" Content="-" Style="{StaticResource OperationButtonOrange}" Click="OperationButton_Click"></Button>
+
         <!--Fila 4 -->
-        <Border Grid.Row="3" Grid.Column="0" BorderThickness="0.1" BorderBrush="#999" Margin="0,72,0,27" Grid.RowSpan="3">
-            <Button Content="1" Style="{StaticResource NumberButton}" Click="NumberButton_Click"></Button>
-        </Border>
-        <Border Grid.Row="3" Grid.Column="1" BorderThickness="0.1" BorderBrush="#999" Margin="0,72,0,27" Grid.RowSpan="3">
-            <Button Content="2" Style="{StaticResource NumberButton}" Click="NumberButton_Click"></Button>
-        </Border>
-        <Border Grid.Row="3" Grid.Column="2" BorderThickness="0.1" BorderBrush="#999" Margin="0,72,0,27" Grid.RowSpan="3">
-            <Button Content="3" Style="{StaticResource NumberButton}" Click="NumberButton_Click"></Button>
-        </Border>
-        <Border Grid.Row="3" Grid.Column="3" BorderThickness="0.1" BorderBrush="#EEE" Margin="0,72,0,27" Grid.RowSpan="3">
-            <Button Content="+" Style="{StaticResource OperationButtonOrange}" Click="OperationButton_Click"></Button>
-        </Border>
-        
+        <Button Grid.Row="4" Grid.Column="0" Content="1" Style="{StaticResource NumberButton}" Click="NumberButton_Click"></Button>
+        <Button Grid.Row="4" Grid.Column="1" Content="2" Style="{StaticResource NumberButton}" Click="NumberButton_Click"></Button>
+        <Button Grid.Row="4" Grid.Column="2" Content="3" Style="{StaticResource NumberButton}" Click="NumberButton_Click"></Button>
+        <Button Grid.Row="4" Grid.Column="3" Content="+" Style="{StaticResource OperationButtonOrange}" Click="OperationButton_Click"></Button>
+
         <!--Fila 5-->
-        <Border Grid.Row="5" Grid.Column="0" BorderThickness="0.1" Grid.ColumnSpan="2" BorderBrush="#999" Grid.RowSpan="2">
-            <Button Content="0" Style="{StaticResource NumberButton}" Click="NumberButton_Click"></Button>
-        </Border>
-        <Border Grid.Row="5" Grid.Column="2" BorderThickness="0.1" BorderBrush="#999" Grid.RowSpan="2">
-            <Button Content="," Style="{StaticResource NumberButton}"></Button>
-        </Border>
-        <Border Grid.Row="5" Grid.Column="3" BorderThickness="0.1" BorderBrush="#EEE" Grid.RowSpan="2">
-            <Button Content="=" Style="{StaticResource OperationButtonOrange}" Click="EqualButton_Click"></Button>
-        </Border>
+        <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Content="0" Style="{StaticResource NumberButton}" Click="NumberButton_Click"></Button>
+        <Button Grid.Row="5" Grid.Column="2" Content="," Style="{StaticResource NumberButton}"></Button>
+        <Button Grid.Row="5" Grid.Column="3" Content="=" Style="{StaticResource OperationButtonOrange}" Click="EqualButton_Click"></Button>
 
     </Grid>
 </Window>
